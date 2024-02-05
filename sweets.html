@@ -1,257 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-           font-family: Arial, sans-serif;
-           margin: 0;
-           padding: 20px;
-       }
-
-       .card {
-           max-width: 200px;
-           height: auto;
-           margin: 10px;
-           border: 1px solid #ddd;
-           border-radius: 8px;
-           overflow: hidden;
-           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-       }
-
-       .card img {
-           max-width: 100%;
-           height: auto;
-           display: block;
-       }
-
-       .card-details {
-           padding: 10px;
-       }
-   </style>
-   
-
-   <style>
-    body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+<style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; /* Center items vertically */
-    height: 100%; /* Ensure container takes full height of the viewport */
+div.gallery:hover {
+  border: 1px solid #777;
 }
 
-.image {
-    flex: 0 0 calc(33.33% - 20px); /* Adjust width for different screen sizes */
-    max-width: calc(33.33% - 20px); /* Adjust max width for different screen sizes */
-    margin: 10px; /* Add margin between images */
+div.gallery img {
+  width: 100%;
+  height: auto;
 }
 
-.image img {
-    width: 100%;
-    height: auto;
-    display: block;
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
 
-/* Tablet Layout */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .image {
-        flex: 0 0 calc(50% - 20px);
-        max-width: calc(50% - 20px);
-    }
-}
-
-/* Laptop/Desktop Layout */
-@media (min-width: 1024px) {
-    .image {
-        flex: 0 0 calc(25% - 20px);
-        max-width: calc(25% - 20px);
-    }
-}
-   </style>
-   <style>
-    .order-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* Adjust as needed */
-}
-
-.card {
-    width: 300px; /* Adjust width as needed */
-    height: 400px; /* Adjust height as needed */
-    background-color: #f0f0f0;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-@media screen and (max-width: 768px) {
-    .card {
-        width: calc(50% - 20px); /* Two cards per row */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .card {
-        width: calc(100% - 20px); /* One card per row */
-    }
-}
-
-.card {
-    width: 50%; /* Adjust width as needed */
-    max-width: 400px; /* Maximum width of the card */
-    height: 400px; /* Adjust height as needed */
-    background-color: #e21313;
-    margin: 10px auto; /* Center the cards horizontally */
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.order-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the minmax values as needed */
-    gap: 20px; /* Adjust the gap between cards */
-    justify-content: center; /* Center the grid horizontally */
-}
-
-.card {
-    background-color: #3a0ddd;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(12, 10, 10, 0.1);
-}
-
-.order-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
-    grid-auto-rows: auto; /* Automatically adjust row height based on content */
-    gap: 20px; /* Adjust the gap between cards */
-    justify-content: center; /* Center the grid horizontally */
-}
-
-.card {
-    background-color: #16f70a;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Add additional styling as needed */
-}
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust as needed */
-    gap: 20px; /* Adjust the gap between cards */
-    justify-content: center; /* Center the grid horizontally */
-}
-
-.card {
-    background-color: #ed0e0e;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap to the next row */
-    justify-content: space-between; /* Adjust alignment as needed */
-}
-
-.flex-item {
-    width: calc(33.33% - 10px); /* Adjust width of items (minus gap) for three columns */
-    margin-bottom: 20px; /* Adjust spacing between items */
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-   </style>
-
+.custom-card {
+    margin-bottom: 40px;}
+</style>
 </head>
 <body>
-    
-    <div class="container">
-        <div class="row">
-          
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                <div id="order-section.html">
+ 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <title>Bootstrap - Card</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
                     <div class="card">
-                        <div class="card-details">
-                            <a href="kajukatri.html">
-                                <img src="kajukatli.jpeg" alt="">
-                            </a>
-                            <h1>kajukatli</h1>
-                            <p>52,000 Kg</p>
+                        <img src="penda.jpeg" class="card-img-top" alt="Image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 1</h5>
+                            <p class="card-text">Description for Card 1.</p>
                         </div>
-                     </div>
-                </div>     
-              </div>
-            </div>
-          </div>
-        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="mava penda.jpeg" class="card-img" alt="Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 2</h5>
+                            <p class="card-text">Description for Card 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="kajukatli.jpeg" class="card-img" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 3</h5>
+                            <p class="card-text">Description for Card 3.</p>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                <div id="order-section.html">
+                <div class="col-md-4 mb-4">
                     <div class="card">
-                        <div class="card-details">
-                            <a href="kajukatri.html">
-                                <img src="kajukatli.jpeg" alt="">
-                            </a>
-                            <h1>kajukatli</h1>
-                            <p>52,000 Kg</p>
+                        <img src="monthal.jpeg" class="card-img" alt="Image 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 2</h5>
+                            <p class="card-text">Description for Card 4.</p>
                         </div>
-                     </div>
-                </div>     
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                <div id="order-section.html">
-                    <div class="card">
-                        <div class="card-details">
-                            <a href="kajukatri.html">
-                                <img src="kajukatli.jpeg" alt="">
-                            </a>
-                            <h1>kajukatli</h1>
-                            <p>52,000 Kg</p>
-                        </div>
-                     </div>
-                </div>     
-              </div>
-            </div>
-          </div>
-        </div>
+                    </div>
+                </div>
         
-  </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="monthal.jpeg" class="card-img" alt="Image 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 2</h5>
+                            <p class="card-text">Description for Card 5.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="kajur roll.jpeg" class="card-img" alt="Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 2</h5>
+                            <p class="card-text">Description for Card 2.</p>
+                        </div>
+                    </div>
+                </div>
+        
+              
+            </div>
+        </div>
+
+        
       
-            
-         
-            
+    </body>
+    </html>
       
 
-     
-
-            
-             
-     
-  
 </body>
 </html>
