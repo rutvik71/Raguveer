@@ -32,26 +32,226 @@
            padding: 10px;
        }
    </style>
+   
+
+   <style>
+    body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    height: 100%; /* Ensure container takes full height of the viewport */
+}
+
+.image {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust width for different screen sizes */
+    max-width: calc(33.33% - 20px); /* Adjust max width for different screen sizes */
+    margin: 10px; /* Add margin between images */
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Tablet Layout */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .image {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+/* Laptop/Desktop Layout */
+@media (min-width: 1024px) {
+    .image {
+        flex: 0 0 calc(25% - 20px);
+        max-width: calc(25% - 20px);
+    }
+}
+   </style>
+   <style>
+    .order-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust as needed */
+}
+
+.card {
+    width: 300px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    background-color: #f0f0f0;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: calc(100% - 20px); /* One card per row */
+    }
+}
+
+.card {
+    width: 50%; /* Adjust width as needed */
+    max-width: 400px; /* Maximum width of the card */
+    height: 400px; /* Adjust height as needed */
+    background-color: #e21313;
+    margin: 10px auto; /* Center the cards horizontally */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the minmax values as needed */
+    gap: 20px; /* Adjust the gap between cards */
+    justify-content: center; /* Center the grid horizontally */
+}
+
+.card {
+    background-color: #3a0ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(12, 10, 10, 0.1);
+}
+
+.order-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    grid-auto-rows: auto; /* Automatically adjust row height based on content */
+    gap: 20px; /* Adjust the gap between cards */
+    justify-content: center; /* Center the grid horizontally */
+}
+
+.card {
+    background-color: #16f70a;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add additional styling as needed */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust as needed */
+    gap: 20px; /* Adjust the gap between cards */
+    justify-content: center; /* Center the grid horizontally */
+}
+
+.card {
+    background-color: #ed0e0e;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next row */
+    justify-content: space-between; /* Adjust alignment as needed */
+}
+
+.flex-item {
+    width: calc(33.33% - 10px); /* Adjust width of items (minus gap) for three columns */
+    margin-bottom: 20px; /* Adjust spacing between items */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+   </style>
+
 </head>
 <body>
+    
     <div class="container">
-        <div id="order-section.html">
+        <div class="row">
+          
+        <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="card">
-                
-                <div class="card-details">
-                          <img src="kajukatli.jpeg" alt="">
-                    <h1>kajukatli</h1>
-                    <p>52,000 Kg</p>
-                    
-                </div>
-                <div class="card-details">
-                    <img src="log.jpeg" alt="">
-              <h1>penda</h1>
-              <p>52,000 Kg</p>
-          </div>
+              <div class="card-body">
+                <div id="order-section.html">
+                    <div class="card">
+                        <div class="card-details">
+                            <a href="kajukatri.html">
+                                <img src="kajukatli.jpeg" alt="">
+                            </a>
+                            <h1>kajukatli</h1>
+                            <p>52,000 Kg</p>
+                        </div>
+                     </div>
+                </div>     
+              </div>
             </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <div id="order-section.html">
+                    <div class="card">
+                        <div class="card-details">
+                            <a href="kajukatri.html">
+                                <img src="kajukatli.jpeg" alt="">
+                            </a>
+                            <h1>kajukatli</h1>
+                            <p>52,000 Kg</p>
+                        </div>
+                     </div>
+                </div>     
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <div id="order-section.html">
+                    <div class="card">
+                        <div class="card-details">
+                            <a href="kajukatri.html">
+                                <img src="kajukatli.jpeg" alt="">
+                            </a>
+                            <h1>kajukatli</h1>
+                            <p>52,000 Kg</p>
+                        </div>
+                     </div>
+                </div>     
+              </div>
+            </div>
+          </div>
+        </div>
+        
+  </div>
+      
             
-     </div>
-</div>
+         
+            
+      
+
+     
+
+            
+             
+     
+  
 </body>
 </html>
