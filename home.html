@@ -3,48 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAGHUVEER SWEETS AND NAMKIN</title>
-    <link rel="stylesheet" href="styles.css">
-   
+    <title>Raguveer Sweets and Nakeem</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Add your custom CSS styles here */
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .card-section {
+            margin-top: 100px; /* Adjust as needed */
+        }
+    </style>
 </head>
 <body>
+<div class="container">
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <a class="navbar-brand" href="#">Raguveer Sweets and Nakeem</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">About </a>
-          <a class="nav-link" href="#">Products</a>
-          <a class="nav-link ">Contanct</a>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div class="order-now-button">
-          <a href="order-section.html">Order Now</a>
-      </div>  
-      <nav class="navbar ">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="products.html">Products</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="home.html">Home</a>
               </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+            </li>
           </ul>
-     </nav>
-      
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </nav>
 
+  <!-- Background Slideshow -->
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="your-image-url.jpg" class="d-block w-100" alt="...">
+          </div>
+          <!-- Add more carousel items with different images and captions -->
+      </div>
+  </div>
+
+  <!-- Cards with Carousel -->
+  <div class="card-section">
+      <div class="row">
+          <div class="col-lg-3">
+              <div class="card">
+                  <img src="pictures.html/logo.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Welcome to Raguveer Sweets and Nakeem</h5>
+                      <p class="card-text">At Raguveer Sweets and Nakeem, we take pride in offering a delectable array of farshan, snacks, and premium dry fruits that are crafted with care and always fresh. Our commitment to quality means that our products contain no artificial chemicals or preservatives, ensuring pure goodness in every bite..</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card">
+                  <img src="pictures.html/bakery items.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Our Farshan Selection:</h5>
+                      <p class="card-text">Indulge in our handcrafted farshan collection, prepared using time-honored recipes and premium ingredients. From crunchy namkeens to savory bhakharwadis, our farshan range offers a burst of flavors that delight the senses.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card">
+                  <img src="pictures.html/kajukatli.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Always Fresh, Always Delicious:  </h5>
+                      <p class="card-text">We believe in serving only the freshest farshan to our valued customers. Our snacks are prepared daily in small batches to ensure maximum freshness and flavor. With no compromise on quality, we guarantee a delightful snacking experience with every purchase.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-3">
+              <div class="card">
+                  <img src="pictures.html/kajur roll.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Premium Dry Fruits:</h5>
+                      <p class="card-text">Elevate your snacking experience with our exquisite selection of premium dry fruits sourced from the finest regions. From plump almonds to succulent dates, our handpicked assortment of dry fruits is packed with nutrients and goodness, perfect for a healthy lifestyle..</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<center><a href="order-section.html"><button style="order-now"> Order NOw</button></a> </center>
 </body>
 </html>
